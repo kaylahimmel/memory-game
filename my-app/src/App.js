@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+    cards
+  };
+
+  countCard = id => {
+    // Filter this.state.cards for cards with an id not equal to the id being removed
+    const cards = this.state.cards.filter(card => card.id !== id);
+    // Set this.state.cards equal to the new cards array
+    this.setState({ cards });
+  };
+
+  // Map over this.state.cards and render a Card component for each card object
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Wrapper>
+        <Title>cards List</Title>
+        {this.state.cards.map(card => (
+          <Card
+            countCard={this.countCard}
+            id={card.id}
+            key={card.id}
+            alt={card.alt}
+            image={card.image}
+          />
+        ))}
+      </Wrapper>
     );
   }
 }

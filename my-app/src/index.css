@@ -1,8 +1,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-
+  width: 100%;
+  background color: #00286d;
+  background-image: url("/images/nightsky_1200x1100.png");
+  background-repeat: no-repeat;
+  background-size: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

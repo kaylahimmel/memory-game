@@ -9,35 +9,44 @@ class App extends Component {
   state = {
     cards: cards,
     selectedCards: [],
-    score: 0
+    score: 0,
+    highScore: 0
   };
 
   handleCardClick = id => {
     console.log(id)
-    let newCards = this.state.selectedCards
-    let newScore = this.state.score
-    let newAlert = this.state.alert
-    let newArray = this.state.cards
+    let clickedCards = this.state.selectedCards;
+    let newScore = this.state.score;
+    let newHighScore = this.state.highScore;
+    let newAlert = this.state.alert;
+    let newArray = this.state.cards;
     // Logic that checks the selectedCards to see if the current card selected exists in that array 
-    if (newCards.includes(id)) {
+    if (clickedCards.includes(id) && newScore > newHighScore) {
       // Logic that resets the game (the user as lost)
       // Reassigns to initial empty array (the state of the array at the start of a new game)
-      newCards = []
+      clickedCards = [];
       // alter the score dependent on a loss (reset to zero)
       newScore = 0;
+      // alter high score
+      newHighScore = newScore;
       //add alert
       newAlert = "You already chose that one--you lose."
     
     } else {
       // Win logic (user clicked unclicked card)
       // Takes the current array and appends the clicked cards id
-      newCards.push(id)
+      clickedCards.push(id)
       // Alter the score dependent on a win (add to score)
       newScore++
     }
     newArray = this.shuffle(newArray)
     // Set this.state.cards equal to the new cards array
-    this.setState({ selectedCards: newCards, score: newScore, alert: newAlert, cards: newArray });
+    this.setState({ 
+      selectedCards: clickedCards, 
+      score: newScore, 
+      highScore: newHighScore,
+      alert: newAlert, 
+      cards: newArray });
   };
 
   // Shuffling function
@@ -49,13 +58,17 @@ class App extends Component {
     return array;
   }
 
+  // Check for high score
+
+
   // Map over this.state.cards and render a Card component for each card object
   render() {
     return (
       <Wrapper>
         <div>
           <Scoreboard>
-            {this.state.score}
+            <h3>Score: {this.state.score}</h3>
+            <h3>High Score: {this.state.highScore}</h3>
             {this.state.alert &&
             <h1>
               {this.state.alert}

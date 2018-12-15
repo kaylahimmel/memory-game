@@ -6,18 +6,18 @@
   },
   {
     "id": 2,
-    "alt": "astronaut-2",
-    "image": "./images/astronaut-2_200x200.jpg"
+    "alt": "rover",
+    "image": "./images/rover_200x200.jpg"
   },
   {
     "id": 3,
-    "alt": "astronaut-3",
-    "image": "./images/astronaut-3_200x200.jpg"
+    "alt": "stars",
+    "image": "./images/stars_200x200.jpg"
   },
   {
     "id": 4,
-    "alt": "comet",
-    "image": "./images/comet_200x200.jpg"
+    "alt": "satelite-2",
+    "image": "./images/satelite-2_200x200.jpg"
   },
   {
     "id": 5,
@@ -26,33 +26,33 @@
   },
   {
     "id": 6,
-    "alt": "planet-2",
-    "image": "./images/planet-2_200x200.jpg"
+    "alt": "rocket-3",
+    "image": "./images/rocket-3_200x200.jpg"
   },
   {
     "id": 7,
-    "alt": "planet-3",
-    "image": "./images/planet-3_200x200.jpg"
+    "alt": "astronaut-3",
+    "image": "./images/astronaut-3_200x200.jpg"
   },
   {
     "id": 8,
-    "alt": "planet-4",
-    "image": "./images/planet-4_200x200.jpg"
-  },
-  {
-    "id": 9,
-    "alt": "planet-5",
-    "image": "./images/planet-5_200x200.jpg"
-  },
-  {
-    "id": 10,
     "alt": "planet-6",
     "image": "./images/planet-6_200x200.jpg"
   },
   {
-    "id": 11,
+    "id": 9,
     "alt": "rocket-1",
     "image": "./images/rocket-1_200x200.jpg"
+  },
+  {
+    "id": 10,
+    "alt": "astronaut-2",
+    "image": "./images/astronaut-2_200x200.jpg"
+  },
+  {
+    "id": 11,
+    "alt": "planet-5",
+    "image": "./images/planet-5_200x200.jpg"
   },
   {
     "id": 12,
@@ -61,37 +61,22 @@
   },
   {
     "id": 13,
-    "alt": "rocket-3",
-    "image": "./images/rocket-3_200x200.jpg"
+    "alt": "planet-2",
+    "image": "./images/planet-2_200x200.jpg"
   },
   {
     "id": 14,
-    "alt": "rocket-4",
-    "image": "./images/rocket-4_200x200.jpg"
+    "alt": "comet",
+    "image": "./images/comet_200x200.jpg"
   },
   {
     "id": 15,
-    "alt": "rover",
-    "image": "./images/rover_200x200.jpg"
+    "alt": "telescope",
+    "image": "./images/telescope_200x200.jpg"
   },
   {
     "id": 16,
     "alt": "satelite-1",
     "image": "./images/satelite-1_200x200.jpg"
-  },
-  {
-    "id": 17,
-    "alt": "satelite-2",
-    "image": "./images/satelite-2_200x200.jpg"
-  },
-  {
-    "id": 18,
-    "alt": "stars",
-    "image": "./images/stars_200x200.jpg"
-  },
-  {
-    "id": 19,
-    "alt": "telescope",
-    "image": "./images/telescope_200x200.jpg"
   }
 ]

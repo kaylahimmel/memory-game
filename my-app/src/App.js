@@ -36,7 +36,7 @@ class App extends Component {
       // alter the score dependent on a loss (reset to zero)
       newScore = 0;
       // show alert
-      newAlert = "You already chose that one--you lose.";
+      newAlert = "You already chose that one--you lose."; 
     } else {
       // Win logic (user clicked unclicked card)
       // Takes the current array and appends the clicked cards id
